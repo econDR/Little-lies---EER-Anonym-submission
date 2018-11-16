@@ -1,0 +1,71 @@
+\begin{table}[htbp]
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{MeanRoll, Altruism and School performance, robustness check: Total score}
+\begin{adjustbox}{width=1\textwidth}
+\begin{threeparttable}
+\centering
+\begin{tabular}{l*{6}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{3}{c}{Benchmark models}                                   &\multicolumn{3}{c}{Including baseline outcome}                         \\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   &\multicolumn{1}{c}{(5)}   &\multicolumn{1}{c}{(6)}   \\
+\midrule
+Total score         &               1.012** &               1.204** &               1.048*  &               1.022** &               1.152** &               1.039*  \\
+                    &             (0.358)   &             (0.364)   &             (0.413)   &             (0.368)   &             (0.368)   &             (0.418)   \\
+MeanRoll, baseline  &                       &                       &                       &               0.210*  &               0.217*  &               0.174   \\
+                    &                       &                       &                       &             (0.097)   &             (0.088)   &             (0.118)   \\
+Female              &              -0.130   &              -0.120   &              -0.134   &              -0.127   &              -0.111   &              -0.134   \\
+                    &             (0.081)   &             (0.081)   &             (0.095)   &             (0.079)   &             (0.080)   &             (0.093)   \\
+Age                 &               0.106** &               0.070   &               0.071   &               0.088** &               0.068   &               0.078   \\
+                    &             (0.032)   &             (0.043)   &             (0.061)   &             (0.031)   &             (0.042)   &             (0.061)   \\
+Payoff              &               0.016   &               0.013   &               0.008   &               0.012   &               0.010   &               0.007   \\
+                    &             (0.033)   &             (0.032)   &             (0.038)   &             (0.033)   &             (0.032)   &             (0.038)   \\
+Constant            &              -1.226** &              -0.965*  &              -0.759   &              -1.059*  &              -0.903*  &              -0.786   \\
+                    &             (0.462)   &             (0.449)   &             (0.676)   &             (0.452)   &             (0.443)   &             (0.726)   \\  \midrule
+Dummies: &&&&& \\                    
+- Schools             &                 Yes   &                  No   &                  No   &                 Yes   &                  No   &                  No   \\
+- Grades              &                  No   &                 Yes   &                  No   &                  No   &                 Yes   &                  No   \\
+- Peer effects        &                  No   &                  No   &                 Yes   &                  No   &                  No   &                 Yes   \\
+- Interviewers        &                 Yes   &                 Yes   &                 Yes   &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+Adj. R-sq.          &               0.069   &               0.078   &               0.002   &               0.094   &               0.108   &               0.014   \\
+Obs                 &                 168   &                 168   &                 168   &                 168   &                 168   &                 168   \\
+AIC                 &                 259   &                 253   &                 273   &                 255   &                 248   &                 272   \\
+BIC                 &                 384   &                 359   &                 442   &                 383   &                 358   &                 443   \\
+\midrule \midrule
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   &\multicolumn{1}{c}{(5)}   &\multicolumn{1}{c}{(6)}   \\
+\midrule
+Total score         &               0.909*  &               1.096** &               0.917*  &               0.922*  &               1.051** &               0.904*  \\
+                    &             (0.374)   &             (0.381)   &             (0.428)   &             (0.381)   &             (0.383)   &             (0.432)   \\
+Altruism, baseline  &              -0.393   &              -0.395   &              -0.461   &              -0.385   &              -0.376   &              -0.476   \\
+                    &             (0.236)   &             (0.255)   &             (0.302)   &             (0.226)   &             (0.251)   &             (0.300)   \\
+MeanRoll, baseline  &                       &                       &                       &               0.208*  &               0.212*  &               0.180   \\
+                    &                       &                       &                       &             (0.093)   &             (0.084)   &             (0.111)   \\
+Female              &              -0.122   &              -0.100   &              -0.106   &              -0.119   &              -0.092   &              -0.105   \\
+                    &             (0.080)   &             (0.083)   &             (0.097)   &             (0.078)   &             (0.082)   &             (0.095)   \\
+Age                 &               0.102** &               0.069   &               0.072   &               0.084** &               0.067   &               0.079   \\
+                    &             (0.032)   &             (0.042)   &             (0.061)   &             (0.031)   &             (0.041)   &             (0.061)   \\
+Payoff              &               0.009   &               0.007   &               0.002   &               0.006   &               0.004   &               0.001   \\
+                    &             (0.034)   &             (0.033)   &             (0.039)   &             (0.034)   &             (0.033)   &             (0.039)   \\
+Constant            &              -0.949   &              -0.764   &              -0.643   &              -0.790   &              -0.712   &              -0.534   \\
+                    &             (0.501)   &             (0.467)   &             (0.778)   &             (0.497)   &             (0.459)   &             (0.770)   \\ \midrule
+Dummies: &&&&& \\                    
+- Schools             &                 Yes   &                  No   &                  No   &                 Yes   &                  No   &                  No   \\
+- Grades              &                  No   &                 Yes   &                  No   &                  No   &                 Yes   &                  No   \\
+- Peer effects        &                  No   &                  No   &                 Yes   &                  No   &                  No   &                 Yes   \\
+- Interviewers        &                 Yes   &                 Yes   &                 Yes   &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+Adj. R-sq.          &               0.079   &               0.087   &               0.017   &               0.104   &               0.116   &               0.030   \\
+Obs                 &                 168   &                 168   &                 168   &                 168   &                 168   &                 168   \\
+AIC                 &                 258   &                 252   &                 271   &                 254   &                 247   &                 269   \\
+BIC                 &                 386   &                 361   &                 443   &                 385   &                 360   &                 444   \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item \textit{Notes:} Dependent variable: MeanRoll. OLS estimation. Robust standard errors in parentheses. \\
+\item \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{tab:cheat_tot}
+\end{table}

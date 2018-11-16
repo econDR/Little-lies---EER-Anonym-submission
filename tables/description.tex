@@ -1,0 +1,33 @@
+\begin{table}[!h]\centering \caption{Variables description}
+\renewcommand*{\arraystretch}{1}
+\begin{tabular}{l p{9.5cm}}\toprule
+\textbf{Variable} 			& \textbf{Description} 			\\ \midrule
+\textit{Behavioural indicators} & \\
+MaxChoice 					& Proportion of maximum values in a given roll chosen by children over the total number of throws (excluding ties)						\\
+MeanRoll 					& Difference between average reported outcome and expected values of individual dice rolls	\\
+Altruism 					& Proportion of packets of biscuits sent to the anonymous respondent						\\
+&\\
+\textit{School performance indicators} & \\
+Math score					& Score in Math in second term, harmonized by dividing \enquote{raw scores} resulting from official school reports by the maximum achievable points for term 2 \\
+Total score					& Total score in term 2 (arithmetic sum of all individual subject scores, harmonized (same procedure described above) \\
+&\\ \midrule
+\textit{Dice roll patterns} & \\
+High Dif 					& Binary variable equals to 1 when the absolute difference between red and blue dice observed outcomes in individual roll series is equal to 4 or 5. \\
+Low Dif					& Binary variable equals to 1 when the absolute difference between red and blue dice observed outcomes in individual roll series is equal to 1, 2, or 3. Used as omitted reference category in regressions. \\
+\textit{Individual characteristics}&			\\
+Age 		 				& Self-reported pupil's age								\\
+Female 						& Dummy variable equals to 1 if pupil is female	\\
+&\\
+\textit{Experiment characteristics}&			\\
+Payoff                      & Payoff earned by child at the end of the first wave (September 2017) \\
+Dummies: & \\
+- Schools              & Dummy variables identifying pupil's schools \\
+- Grades              & Dummy variables identifying pupil's grades \\
+- Peer effects  & Dummy variables identifying pupil's grades within each school \\
+- Interviewers         & Dummy variables identifying interviewers \\
+\bottomrule
+\end{tabular} 
+\label{tab:description}
+\end{table}
+
+% Dice Diff=$k$ 					& Absolute difference between red and blue dice observed outcomes in individual roll series, for $k$ possible values, with 0 $\le k \le 5, k\in\mathbb{N}$ \\

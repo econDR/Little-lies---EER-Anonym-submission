@@ -1,0 +1,71 @@
+\begin{table}[!h]
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Inspecting reverse causality: the effect of cheating (MaxChoice and MeanRoll) on Math score}
+\begin{adjustbox}{width=1\textwidth}
+\begin{threeparttable}
+\centering
+\begin{tabular}{l*{6}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{3}{c}{Benchmark models}                                   &\multicolumn{3}{c}{Including baseline outcome}                         \\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   &\multicolumn{1}{c}{(5)}   &\multicolumn{1}{c}{(6)}   \\
+
+\midrule
+MaxChoice, baseline &              -0.016   &               0.022   &               0.033   &               0.002   &               0.028   &               0.002   \\
+                    &             (0.065)   &             (0.063)   &             (0.065)   &             (0.058)   &             (0.056)   &             (0.059)   \\
+Math, baseline      &                       &                       &                       &               0.507***&               0.497***&               0.584***\\
+                    &                       &                       &                       &             (0.089)   &             (0.092)   &             (0.096)   \\
+Female              &              -0.007   &               0.013   &               0.001   &              -0.017   &              -0.003   &              -0.009   \\
+                    &             (0.027)   &             (0.024)   &             (0.027)   &             (0.023)   &             (0.022)   &             (0.025)   \\
+Age                 &              -0.006   &               0.024   &               0.025   &              -0.005   &               0.011   &               0.014   \\
+                    &             (0.011)   &             (0.013)   &             (0.021)   &             (0.010)   &             (0.013)   &             (0.015)   \\
+Payoff              &              -0.005   &              -0.004   &              -0.006   &               0.001   &               0.000   &              -0.003   \\
+                    &             (0.008)   &             (0.008)   &             (0.008)   &             (0.008)   &             (0.008)   &             (0.008)   \\
+Constant            &               0.611***&               0.347*  &               0.561*  &               0.226   &               0.067   &              -0.024   \\
+                    &             (0.153)   &             (0.143)   &             (0.219)   &             (0.166)   &             (0.135)   &             (0.229)   \\ \midrule
+Dummies: &&&&& \\                    
+- Schools             &                 Yes   &                  No   &                  No   &                 Yes   &                  No   &                  No   \\
+- Grades              &                  No   &                 Yes   &                  No   &                  No   &                 Yes   &                  No   \\
+- Peer effects        &                  No   &                  No   &                 Yes   &                  No   &                  No   &                 Yes   \\
+- Interviewers        &                 Yes   &                 Yes   &                 Yes   &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+Adj. R-sq.          &               0.119   &               0.116   &               0.161   &               0.315   &               0.296   &               0.386   \\
+Obs                 &                 168   &                 168   &                 168   &                 164   &                 164   &                 164   \\
+AIC                 &                -147   &                -151   &                -153   &                -188   &                -187   &                -203   \\
+BIC                 &                 -22   &                 -45   &                  16   &                 -60   &                 -79   &                 -33   \\
+\midrule   \midrule         
+                    &\multicolumn{3}{c}{Benchmark models}                                   &\multicolumn{3}{c}{Including baseline outcome}                         \\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   &\multicolumn{1}{c}{(5)}   &\multicolumn{1}{c}{(6)}   \\
+\midrule
+MeanRoll, baseline  &               0.007   &               0.025   &               0.034   &               0.014   &               0.025   &               0.018   \\
+                    &             (0.032)   &             (0.030)   &             (0.033)   &             (0.028)   &             (0.027)   &             (0.030)   \\
+Math, baseline      &                       &                       &                       &               0.507***&               0.494***&               0.575***\\
+                    &                       &                       &                       &             (0.089)   &             (0.093)   &             (0.097)   \\
+Female              &              -0.006   &               0.014   &               0.001   &              -0.017   &              -0.003   &              -0.009   \\
+                    &             (0.027)   &             (0.024)   &             (0.027)   &             (0.023)   &             (0.022)   &             (0.024)   \\
+Age                 &              -0.007   &               0.024   &               0.026   &              -0.006   &               0.011   &               0.015   \\
+                    &             (0.012)   &             (0.014)   &             (0.021)   &             (0.010)   &             (0.013)   &             (0.015)   \\
+Payoff              &              -0.005   &              -0.004   &              -0.006   &               0.001   &               0.000   &              -0.003   \\
+                    &             (0.008)   &             (0.008)   &             (0.008)   &             (0.008)   &             (0.008)   &             (0.008)   \\
+Constant            &               0.615***&               0.360*  &               0.586** &               0.239   &               0.085   &              -0.049   \\
+                    &             (0.163)   &             (0.146)   &             (0.221)   &             (0.174)   &             (0.138)   &             (0.228)   \\ \midrule
+Dummies: &&&&& \\                    
+- Schools             &                 Yes   &                  No   &                  No   &                 Yes   &                  No   &                  No   \\
+- Grades              &                  No   &                 Yes   &                  No   &                  No   &                 Yes   &                  No   \\
+- Peer effects        &                  No   &                  No   &                 Yes   &                  No   &                  No   &                 Yes   \\
+- Interviewers        &                 Yes   &                 Yes   &                 Yes   &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+Adj. R-sq.          &               0.119   &               0.120   &               0.168   &               0.317   &               0.300   &               0.389   \\
+Obs                 &                 168   &                 168   &                 168   &                 164   &                 164   &                 164   \\
+AIC                 &                -147   &                -152   &                -154   &                -188   &                -188   &                -204   \\
+BIC                 &                 -22   &                 -46   &                  14   &                 -61   &                 -79   &                 -34   \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item \textit{Notes:} Dependent variable: Math score. OLS estimation. Robust standard errors in parentheses. \\
+\item \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{tab:rev_cause}
+\end{table}

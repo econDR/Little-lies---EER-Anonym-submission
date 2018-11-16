@@ -1,0 +1,42 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Cheating patterns: the effect of Math score on MaxChoice conditional on High Dif}
+\begin{threeparttable}
+
+\begin{tabular}{l*{3}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   \\
+\midrule
+Math score          &               0.205   &               0.245*  &               0.259*  \\
+                    &             (0.111)   &             (0.109)   &             (0.117)   \\
+High Dif $\times$ Math score&               0.300*  &               0.312*  &               0.310*  \\
+                    &             (0.143)   &             (0.143)   &             (0.140)   \\
+High Dif           &              -0.171   &              -0.181*  &              -0.181*  \\
+                    &             (0.090)   &             (0.090)   &             (0.089)   \\
+Female              &              -0.052   &              -0.049   &              -0.049   \\
+                    &             (0.033)   &             (0.034)   &             (0.036)   \\
+Age                 &               0.050***&               0.033   &               0.021   \\
+                    &             (0.014)   &             (0.024)   &             (0.031)   \\
+Payoff              &               0.005   &               0.004   &               0.002   \\
+                    &             (0.014)   &             (0.014)   &             (0.014)   \\ \midrule
+Dummies: &&& \\
+- Schools      &                 Yes   &                  No   &                  No   \\
+- Grades       &                  No   &                 Yes   &                  No   \\
+- Peer Effects &                  No   &                  No   &                 Yes  \\
+- Interviewers &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+Adj. R-sq.          &               0.056   &             0.047     &         0.07           \\
+Obs                 &                2741   &                2741   &                2725   \\
+AIC                 &                3334   &                3353   &                3304   \\
+BIC                 &                3577   &                3560   &                3635   \\  
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\textit{Notes:} Dependent variable: MaxChoice. Margins from GLM for binomial family estimations (Logit link). Robust standard errors in parentheses, clustered at children level. \\
+\item The analysis is performed on all reported dice rolls; dice rolls in which difference between dice is 0 (ties) are not included in the analysis. Reference category (omitted) is Low Dif. \\
+\item \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)
+\end{tablenotes}
+\end{threeparttable}
+\label{tab:cheat_patterns}
+\end{table}
